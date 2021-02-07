@@ -3,3 +3,6 @@ bin/
 lib/
 
 *.cfg
+
+# networkx files
+share/
