@@ -28,3 +28,14 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: project path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: projects
+  - action: utter_wait
+  - action: action_get_projects
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye

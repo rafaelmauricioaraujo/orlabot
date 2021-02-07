@@ -8,4 +8,4 @@ lib/
 share/
 
 # rasa models
-models/20210208*
+models/

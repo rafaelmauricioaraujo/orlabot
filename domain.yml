@@ -8,10 +8,12 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - projects
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hey! How you doing?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -19,15 +21,27 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+  - text: "Feel better?"
 
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Happy to help!"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "See you later"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Rasa, configured by Orla"
+
+  utter_wait:
+  - text: "Ok, wait a minute, i'll check for you..."
+  - text: "let me check for you..."
+  - text: "let me see in database..."
+
+actions:
+  - action_get_projects
 
 session_config:
   session_expiration_time: 60

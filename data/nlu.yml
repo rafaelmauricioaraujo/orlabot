@@ -90,3 +90,12 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: projects
+  examples: |
+    - what projects existing actually
+    - what projects active
+    - tell me about Orla's project
+    - tell whats project Orla do have
+    - Orla have any project today?
+    - What project we have?
