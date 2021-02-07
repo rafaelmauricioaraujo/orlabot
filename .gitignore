@@ -6,3 +6,6 @@ lib/
 
 # networkx files
 share/
+
+# rasa models
+models/20210208*
