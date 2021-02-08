@@ -30,7 +30,8 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from pymongo import MongoClient
+# from pymongo import MongoClient
+import database
 
 
 class getProjects(Action):
@@ -42,15 +43,14 @@ class getProjects(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        client = MongoClient("mongodb+srv://rasa:Y3XMzsBIO5i1N9Re@cluster0.tpni9.mongodb.net/orla?retryWrites=true&w=majority")
-        db = client.orla
-        cursor = db.project.find({})
+        # client = MongoClient("mongodb+srv://rasa:Y3XMzsBIO5i1N9Re@cluster0.tpni9.mongodb.net/orla?retryWrites=true&w=majority")
+        # db = client.orla
+        cursor = database.find()
         results = [doc for doc in cursor]
         message = ''
         for result in results:
-            print('result.name: ', result['name'])
             message += result['name'] + ', '
 
         dispatcher.utter_message(text=message)
-        client.close
+        database.close()
         return []
