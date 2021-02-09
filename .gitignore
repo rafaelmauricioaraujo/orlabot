@@ -12,3 +12,6 @@ models/
 
 # env variables
 .env
+
+# project endpoints
+endpoints.yml
