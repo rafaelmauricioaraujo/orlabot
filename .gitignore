@@ -9,3 +9,6 @@ share/
 
 # rasa models
 models/
+
+# env variables
+.env

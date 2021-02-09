@@ -1,9 +1,13 @@
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
-client = MongoClient("mongodb+srv://rasa:Y3XMzsBIO5i1N9Re@cluster0.tpni9.mongodb.net/orla?retryWrites=true&w=majority")
+load_dotenv()
+
+client = MongoClient(os.getenv("DATABASE"))
 db = client.orla
 
-def find():
+def find_project():
     return db.project.find({})
 
 def close():
