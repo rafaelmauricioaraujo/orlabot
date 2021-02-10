@@ -99,3 +99,10 @@ nlu:
     - tell whats project Orla do have
     - Orla have any project today?
     - What project we have?
+
+- intent: chitchat
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?

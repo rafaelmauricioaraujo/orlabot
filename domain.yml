@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - projects
+  - chitchat
 
 responses:
   utter_greet:
@@ -39,6 +40,11 @@ responses:
   - text: "Ok, wait a minute, i'll check for you..."
   - text: "let me check for you..."
   - text: "let me see in database..."
+
+  utter_chitchat:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: "Hello, my name is Orlabot."
+  - text: "I am called Orla Bot!"
 
 actions:
   - action_get_projects
