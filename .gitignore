@@ -16,3 +16,6 @@ models/
 
 # project endpoints
 endpoints.yml
+
+# project credentials
+credentials.yml
