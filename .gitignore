@@ -1,6 +1,7 @@
 # env
 bin/
 lib/
+Scripts/
 
 *.cfg
 

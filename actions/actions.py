@@ -42,6 +42,9 @@ class getProjects(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        
+        print('action called')
+
         cursor = database.find_project()
         results = [doc for doc in cursor]
         message = ''

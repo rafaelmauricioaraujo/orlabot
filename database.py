@@ -8,6 +8,7 @@ client = MongoClient(os.getenv("DATABASE"))
 db = client.orla
 
 def find_project():
+    print('find project called')
     return db.project.find({})
 
 def close():
